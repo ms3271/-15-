@@ -1,3 +1,4 @@
+# 라이브러리 로드: 시스템 제어, 무작위 추출, 날짜 및 시간 처리를 위한 모듈
 import os
 import random
 import string
