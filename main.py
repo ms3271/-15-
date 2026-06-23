@@ -38,7 +38,7 @@ def simple_notepad():
     
     if sub_menu == "1":
         if os.path.exists(MEMO_FILE):
-            with open(MEMO_FILE, "r", encoding="utf-8") as f:
+            with open(MEMO_FILE, "r", encoding="utf-8") as f: # 파일 입출력: 한글 깨짐을 방지하기 위해 utf-8 인코딩으로 텍스트 파일 제어
                 print(f"\n[{MEMO_FILE} 내용]\n{f.read()}")
         else:
             print("저장된 메모 파일이 없습니다.")
